@@ -49,15 +49,15 @@ f, ax = plt.subplots(figsize=(7, 5), sharex=False)
 ax.set(title='Hours vs Percentage',xlabel='Hours Studied', ylabel='Percentage Score')
 sns.barplot(x=data.Hours, y=data.Scores, palette="rocket", ax=ax)
 
-sns.pairplot(s_data)
+sns.pairplot(data)
 
 """### **Splitting the data**
 
 Spitting Data Into Input(Hours) and Output(Score)
 """
 
-X = s_data.iloc[:, :-1].values  
-y = s_data.iloc[:, 1].values  
+X = data.iloc[:, :-1].values  
+y = data.iloc[:, 1].values  
 
 #print(X)
 #print(y)
